@@ -1,3 +1,8 @@
+"""
+This file contains the tests for the various data structures
+contained in `urban-api/uapi/models.py`.
+"""
+
 import unittest
 
 from uapi import User
