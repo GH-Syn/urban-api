@@ -2,3 +2,4 @@ pyright
 black
 pytest
 tox
+sphinx-autodoc-typehints

@@ -3,17 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Urban API's documentation!
-=====================================
+Urban API
+---------
+
+This documentation directly pertains to the Urban API `source code <https://github.com/GH-Syn/urban-api>`_.
+
+
+Contents
+********
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
+   models
 
 
 
-Indices and tables
-==================
+Indices
+*******
 
 * :ref:`genindex`
 * :ref:`modindex`
