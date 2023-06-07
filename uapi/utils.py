@@ -16,7 +16,6 @@ The three 'pillars' of `urban-api/uapi/utils.py`
 """
 
 
-
 def fetch_posts_from_user(name: str, page=0) -> int:
     """Index number of posts from a user.
 
