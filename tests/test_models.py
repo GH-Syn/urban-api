@@ -1,6 +1,6 @@
 import unittest
 
-import uapi
+from uapi import User
 
 
 class TestUserModel(unittest.TestCase):
@@ -13,17 +13,31 @@ class TestUserModel(unittest.TestCase):
     def __init__(self, method_name) -> None:
         super().__init__(method_name)
 
+    def setUp(self) -> None:
+        """
+        Create an instance of `uapi.User`.
+        """
+        self.user = User(name="John Doe", posts=2, email="johndoe@example.com")
+        return super().setUp()
+
     def test_name_type(self):
         """
         Test name is an instance of `str`
         """
-        assert True
+        self.assertIsInstance(self.user.name, str)
 
     def test_email_exists(self):
         """
         Test that user has an email address
         """
-        assert True
+        self.assertTrue(self.user.__getattribute__('email'))
+
+    def test_email_type(self):
+        """
+        Test email is an instance of `str`
+        """
+        self.assertIsInstance(self.user.email, str)
+
 
 if __name__ == "__main__":
     unittest.main()
