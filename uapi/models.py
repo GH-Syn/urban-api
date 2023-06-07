@@ -5,4 +5,4 @@ import dataclasses
 class User:
     name: str
     posts: int
-    email: str = dataclasses.field(kw_only=True, init=False)
+    email: str | None = dataclasses.field(kw_only=True, init=True, default=None)

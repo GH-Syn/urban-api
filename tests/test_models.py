@@ -17,7 +17,7 @@ class TestUserModel(unittest.TestCase):
         """
         Create instance of `uapi.User`.
         """
-        self.user = User(name="John Doe", posts=2)
+        self.user = User(name="John Doe", posts=2, email="doe@example.com")
         return super().setUp()
 
     def test_name_type(self):
@@ -34,9 +34,9 @@ class TestUserModel(unittest.TestCase):
 
     def test_email_type(self):
         """
-        email is an instance of `str`
+        email is an instance of `str` or `None`
         """
-        self.assertIsInstance(self.user.email, str)
+        self.assertIsInstance(self.user.email, str | None)
 
     def test_posts_abs(self):
         """
