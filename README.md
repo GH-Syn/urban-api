@@ -1,2 +1,2 @@
-# urban-api
-An external API for urban-cli
+# Urban API
+An external API for `urban-cli`.
