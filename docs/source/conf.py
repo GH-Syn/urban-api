@@ -23,12 +23,12 @@ release = "0.0.0-devel"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-   'sphinx.ext.duration',
-   'sphinx.ext.doctest',
-   'sphinx.ext.autodoc',
-   'sphinx_autodoc_typehints',
-   'sphinx.ext.autodoc',
-   'sphinx.ext.autosummary',
+    "sphinx.ext.duration",
+    "sphinx.ext.doctest",
+    "sphinx.ext.autodoc",
+    "sphinx_autodoc_typehints",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
 ]
 
 templates_path = ["_templates"]
