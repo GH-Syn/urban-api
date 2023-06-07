@@ -7,6 +7,7 @@ Urban API
 ---------
 
 This documentation directly pertains to the Urban API `source code <https://github.com/GH-Syn/urban-api>`_.
+You can access the index page for this documentation `here <genindex.html>`_.
 
 
 Contents
@@ -15,11 +16,3 @@ Contents
 .. toctree::
 
    models
-
-
-
-Indices
-*******
-
-* :ref:`genindex`
-* :ref:`search`
