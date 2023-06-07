@@ -17,7 +17,7 @@ class TestUserModel(unittest.TestCase):
         """
         Create instance of `uapi.User`.
         """
-        self.user = User(name="John Doe", posts=2, email="johndoe@example.com")
+        self.user = User(name="John Doe", posts=2)
         return super().setUp()
 
     def test_name_type(self):
@@ -30,7 +30,7 @@ class TestUserModel(unittest.TestCase):
         """
         user has an email address
         """
-        self.assertTrue(self.user.__getattribute__('email'))
+        self.assertTrue(self.user.__getattribute__("email"))
 
     def test_email_type(self):
         """
