@@ -12,12 +12,9 @@ library.
 
    It is annotated with type hints and follows the data class pattern.
 
-   :param name: Username is an alphanumeric value
-   :type name: str
-   :param posts: Number of definitions created
-   :type posts: int
-   :param kwargs: Additional keyword arguments
-   :type kwargs: dict
+   :param str name: Username is an alphanumeric value
+   :param int posts: Number of definitions created
+   :param dict kwargs: Additional keyword arguments
 
    ``User`` can be instantiated and accessed as shown::
 
