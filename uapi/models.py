@@ -13,6 +13,16 @@ import dataclasses
 
 @dataclasses.dataclass(order=False, frozen=True)
 class User:
+    """
+    This is a data class representing a User object.
+
+    It is annotated with type hints and follows the data class pattern.
+
+    :param str name: Username is an alphanumeric value
+    :param int posts: Number of definitions created
+    :param dict kwargs: Additional keyword arguments
+    """
+
     name: str
     posts: int
     email: str | None = dataclasses.field(kw_only=True, init=True, default=None)

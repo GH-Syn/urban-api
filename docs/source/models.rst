@@ -1,44 +1,43 @@
+.. module:: models
+   :synopsis: Container for common data structures used to represent data.
+
 Models
-======
+******
 
 As mentioned in `models <../../../uapi/models.py>`_, any models or classes that are needed such as
 data structures or data classes will be structured and laid out using the
 `dataclasses` library, which is, conveniently native to the Python standard
 library.
 
-.. py:class:: User
+----
 
-   This is a data class representing a User object.
+.. autoclass:: User
 
-   It is annotated with type hints and follows the data class pattern.
+``User`` can be instantiated and accessed as shown::
 
-   :param str name: Username is an alphanumeric value
-   :param int posts: Number of definitions created
-   :param dict kwargs: Additional keyword arguments
+  user = User("John Smith", 2);
+  print(user.name)
+  print(user.posts)
 
-   ``User`` can be instantiated and accessed as shown::
+Output::
 
-      user = User("John Smith", 2);
-      >>>
+  >>> "John Smith"
+  >>> 2
 
-      print(user.name)
-      >>> "John Smith"
+``User`` also supports keyword arguments::
 
-      print(user.posts)
-      >>> 2
+  user = User("John Doe", 6, email="johndoe@domain.com") # Email is now an instance variable
+  print(user.email)
 
-   ``User`` also supports keyword arguments::
+Output::
 
-      user = User("John Doe", 6, email="johndoe@domain.com")
+  >>> "johndoe@domain.com"
 
-   ``email`` is now a string declared as an instance variable::
+Variables are immutable by default::
 
-      print(user.email)
-      >>> "johndoe@domain.com"
+  user = User("James Smith", 4)
 
-   Instance variables are `immutable`::
+Output::
 
-      user = User("James Smith", 4)
-
-      user.name = "James"  # Raises a dataclasses.FrozenInstanceError
+  >>> user.name = "James"  # Raises a dataclasses.FrozenInstanceError
 

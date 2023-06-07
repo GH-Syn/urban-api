@@ -11,6 +11,7 @@ import sys
 
 sys.path.append("../uapi")
 sys.path.append("../uapi/")
+sys.path.append("../uapi/models.py")
 sys.path.append(os.getcwd())
 
 project = "Urban API"
